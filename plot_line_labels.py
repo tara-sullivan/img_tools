@@ -159,10 +159,10 @@ if __name__ == '__main__':
             yticks=[150, 700]
             )
 
-    import tikzplotlib
+    # import tikzplotlib
 
-    tikzplotlib.clean_figure()
-    tikzplotlib.save('testfig.tex')
-    # tikzplotlib.save('testfig.tex', standalone=True)
-    fig = plt.gca()
+    # tikzplotlib.clean_figure()
+    # tikzplotlib.save('testfig.tex')
+    # # tikzplotlib.save('testfig.tex', standalone=True)
+    # fig = plt.gca()
     plt.show()

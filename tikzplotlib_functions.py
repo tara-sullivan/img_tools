@@ -7,14 +7,22 @@ Therefore, I select the option wrap=off in tikzplotlib,
 save the initial version of the graph, and then manually add content
 to the beginning and the end of the file.
 
-Note to self: the first place I employed this method was in save_ipeds_plots.py.
+Note to self: the first place I employed this method was in save_ipeds_plots
 I have not incorporated these updated functions into that code.
 '''
 import numpy as np
 import tikzplotlib as tpl
 import matplotlib.pyplot as plt
 
-from figsize import ArticleSize
+import sys
+# dissertation path
+proj_path = '/Users/tarasullivan/Documents/dissertation'
+
+# %%
+# Add items from img_tools
+if proj_path not in sys.path:
+    sys.path.append(proj_path)
+from img_tools.figsize import ArticleSize
 size = ArticleSize()
 
 
